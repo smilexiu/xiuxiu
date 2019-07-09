@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: #eee;
+}
+body{
+    /*
+    min-width: 设置当前元素最小的宽度
+    max-width: 设置当前元素最大的宽度
+    */
+    width: 100%;
+    height: 100%;
+    /*min-width: 320px;*/
+    /*max-width: 750px;*/
+    /*margin: 0 auto;*/
+    background-color: #ffffff;
+    display: block;
+}
+/*头部开始*/
+.header{
+    background-color: red;
+}
+.header>img{
+    width:100%;
+    vertical-align: bottom;
+}
+/*头部结束*/
+/*中间区域开始*/
+.main{
+    color: #fff;
+}
+.main>.section{
+    display: flex;
+    height: 100px;
+    margin: 4px 2px;
+    background-color: skyblue;
+}
+.main>.section>.col{
+    flex: 1;
+    border-left: 1px solid #fff;
+    box-sizing: border-box;
+    background-color: #ff5555;
+    text-align: center;
+}
+.main>.section>.col:nth-child(1){
+   border-left: none;
+}
+.main>.section>.col:nth-child(1){
+    border-left: none;
+}
+.section>.hotel>p{
+    margin: 15px 0;
+}
+.section>.hotel>img{
+    width: 42px;
+    height: 46px;
+}
+.main>.section>.col>div{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+}
+.main>.section>.col>div:last-child{
+    border-bottom: none;
+}
+.main>.section:nth-child(2)>.col{
+    background-color: #00a7f7;
+}
+.main>.section:nth-child(3)>.col{
+    background-color: #7cb832;
+}
+.main>.section:nth-child(4)>.col{
+    background-color: #ff9900;
+}
+.main>.section:last-child{
+    height: 50px;
+    line-height: 50px;
+}
+/*中间区域结束*/
+/*底部导航开始*/
+.nav{
+    background-color: #ccc;
+    padding: 10px 0;
+}
+.nav>ul{
+    display: flex;
+    list-style: none;
+}
+.nav>ul>li{
+    flex: 1;
+    height: 70px;
+    text-align: center;
+    background-color: #ffffff;
+}
+.nav>ul>li>i{
+    margin-top: 12px;
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    background-image: url(../images/entrances.png);
+    background-repeat: no-repeat;
+    background-position: -35px -12px;
+    background-size: 374px 130px;
+}
+.nav>ul>li>p{
+    color: #666;
+    font-size: 12px;
+}
+.nav>ul>li:nth-child(2)>i{
+    background-position: -124px -12px;
+}
+.nav>ul>li:nth-child(3)>i{
+    background-position: -212px -12px;
+}
+.nav>ul>li:last-child>i{
+    background-position: -300px -79px;
+}
+.nav>ul:nth-child(2)>li:nth-child(2)>i{
+    background-size: 27px 27px;
+    background-position: 3px 6px;
+    background-image: url(../images/youlun.png);
+}
+.nav>ul:nth-child(2)>li:nth-child(3)>i{
+    background-position: -212px -79px;
+}
+.nav>ul:nth-child(2)>li:first-child>i{
+    background-position: -35px -79px;
+}
+.nav>ul:nth-child(2)>li:last-child>i{
+    background-position: -300px -12px;
+}
+/*底部导航结束*/
+/*底部指引区域开始*/
+.guide{
+    display: flex;
+    height: 80px;
+    background-color: #fff;
+}
+.guide>div{
+    flex: 1;
+    text-align: center;
+}
+.guide>div>i{
+    margin-top: 10px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #666;
+    border-radius: 50%;
+}
+.guide>div>p{
+   color: #666;
+    font-size: 12px;
+}
+/*底部指引区域结束*/
+/*底部开始*/
+.footer{
+    height: 50px;
+    background-color: #ccc;
+}
+.footer>p{
+    float: left;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.footer>p:first-child{
+    margin-right: 10px;
+    color: #8c8c8c;
+}
+.footer>p>a{
+    text-decoration: none;
+    color: #333;
+}
+/*底部结束*/
